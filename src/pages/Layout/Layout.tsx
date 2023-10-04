@@ -1,19 +1,21 @@
 
 
+import { Outlet } from 'react-router-dom';
 import Header from "../../components/Header/Header";
-import  Footer from "../../components/Footer/Footer";
-import Intro from "../Intro/Intro";
-import About from "../About/About";
+import Footer from "../../components/Footer/Footer";
 
 const Layout = () => {
     return (
         <div>
-            <Header/>
+            <header>
+                <Header />
+            </header>
             <main>
-                <Intro/>
-                <About/>
+                <Outlet />
             </main>
-            <Footer/>
+            <footer>
+                <Footer />
+            </footer>
         </div>
     );
 };

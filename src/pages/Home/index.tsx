@@ -1,14 +1,13 @@
 
-const Intro = () => {
 
-   
+const index = () => {
     return (
         <section>
             <div className="container">
-                Intro
+                <h1>Home</h1>
             </div>
         </section>
     );
 };
 
-export default Intro;
+export default index;
